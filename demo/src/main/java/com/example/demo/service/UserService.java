@@ -1,8 +1,12 @@
 package com.example.demo.service;
 
-import org.springframework.stereotype.Service;
+import com.example.demo.entity.User;
 
-@Service
-public class UserService {
+import java.util.List;
 
+public interface UserService {
+
+    void addUser(User user);
+
+    List<User> list();
 }
